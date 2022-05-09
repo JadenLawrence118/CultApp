@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CultApp.MainPage">
+
+    <ScrollView>
+        <Grid>
+            <Image Source="background.png"
+                   Aspect="AspectFill" />
+            
+            <StackLayout>
+                <Grid Margin="10,0,10,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.25*" />
+                        <ColumnDefinition Width="0.25*" />
+                        <ColumnDefinition Width="0.25*" />
+                        <ColumnDefinition Width="0.25*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="135" />
+                    </Grid.RowDefinitions>
+
+                    <ImageButton x:Name="btn1"
+                        Source="drawable/placeholderImage.png"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"
+                        BackgroundColor="Black"
+                        Grid.Column="0"
+                        Grid.Row="1" 
+                        Clicked="Btn1_Clicked" />
+                    <ImageButton x:Name="btn2"
+                        Source="drawable/placeholderImage.png"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"
+                        BackgroundColor="Black"
+                        Grid.Column="1" 
+                        Grid.Row="1"
+                        Clicked="Btn2_Clicked" />
+                    <ImageButton x:Name="btn3"
+                        Source="drawable/placeholderImage.png"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"
+                        BackgroundColor="Black"
+                        Grid.Column="2" 
+                        Grid.Row="1" 
+                        Clicked="Btn3_Clicked" />
+                    <ImageButton x:Name="btn4"
+                        Source="drawable/placeholderImage.png"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"
+                        BackgroundColor="Black"
+                        Grid.Column="3" 
+                        Grid.Row="1"
+                        Clicked="Btn4_Clicked" />
+                </Grid>
+
+                <Grid Margin="10,0,10,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.2*" />
+                        <ColumnDefinition Width="0.6*" />
+                        <ColumnDefinition Width="0.22*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="135" />
+                    </Grid.RowDefinitions>
+
+                    <ImageButton Source="drawable/rENTER.png"
+                                BackgroundColor="Black"
+                                BorderColor="#88001b"
+                                BorderWidth="3"
+                                Aspect="AspectFit"                                
+                                Grid.Column="1" 
+                                Grid.Row="0"
+                                Clicked="BtnEnter_Clicked" />
+                </Grid>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>
